@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg,rgba(38, 255, 0, 0.493),blue);
+    padding: 10px;
+}
+
+
+.block{
+    background-color: white;
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 80px;
+    padding: 30px 70px 50px;
+    border-radius: 10px;
+    box-shadow: 3px 10px 10px rgba(0,0,0,0.3);
+    }
+
+.block h2{
+    background-color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: 1000;
+}
+
+.input{
+    width: 100%;
+    margin-top: 40px ;
+    margin-bottom: 40px;
+    height: 20px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgba(128, 128, 128, 0.293);
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 0px;
+}
+
+.input input{
+    flex: 1;
+    padding: 5px;
+    margin-right: 5px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.2em;
+    font-weight: 14px;
+}
+
+.input button{
+    border: none;
+    outline: none;
+    padding: 11px 20px;
+    color: white;
+    border-radius: 20px;
+    background-color: rgb(254, 177, 35);
+    font-size: 16px;
+}
+
+.input button:hover{
+    cursor: pointer;
+    background-color: rgb(210, 157, 60);
+}
+
+ul li{
+    list-style: none;
+    font-size: 28px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    font-weight: 400;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px
+    ;
+    border-radius: 50%;
+    border: 2px solid rgb(128, 128, 128,0.5);
+    top: 16px;
+    left: 8px;
+
+}
+
+ul li.checked{
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-color: rgba(128, 128, 128, 0.408);
+}
+
+
+
+ul li span{
+    right: 0;
+    position: absolute;
+    top: 13px;
+    height: 30px;
+    width: 40px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #555;
+    text-align: center;
+    background-color: white;
+    /* top: 5px;
+    height: 40px;
+    width: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center; */
+    align-items: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background-color: rgba(128, 128, 128, 0.197);
+
+}
